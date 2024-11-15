@@ -71,6 +71,7 @@
                     { text: "productId", value: "productId" },
                     { text: "qty", value: "qty" },
                     { text: "status", value: "status" },
+                    { text: "oderDt", value: "oderDt" },
                 ],
             order : [],
             newValue: {},
@@ -92,6 +93,7 @@
                 'productId': 0,
                 'qty': 0,
                 'status': '',
+                'oderDt': '2024-11-15',
             }
         },
         methods: {
