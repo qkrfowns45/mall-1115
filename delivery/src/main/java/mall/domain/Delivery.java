@@ -41,28 +41,19 @@ public class Delivery {
 
     //<<< Clean Arch / Port Method
     public static void startDelivery(OrderPlaced orderPlaced) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
+        
         Delivery delivery = new Delivery();
+
+        delivery.setProductId(orderPlaced.getProductId());
+        delivery.setQty(orderPlaced.getQty());
+        delivery.setStatus(orderPlaced.getStatus());
+        delivery.setUserId(orderPlaced.getUserId());
+        delivery.setStatus(orderPlaced.getStatus());
+        
         repository().save(delivery);
 
         DeliveryStated deliveryStated = new DeliveryStated(delivery);
         deliveryStated.publishAfterCommit();
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(orderPlaced.get???()).ifPresent(delivery->{
-            
-            delivery // do something
-            repository().save(delivery);
-
-            DeliveryStated deliveryStated = new DeliveryStated(delivery);
-            deliveryStated.publishAfterCommit();
-
-         });
-        */
 
     }
     //>>> Clean Arch / Port Method
